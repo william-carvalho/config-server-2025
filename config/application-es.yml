@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: welcome-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+welcome-service:
+  welcome: "Hola"
+  default-value: "Mundo"
